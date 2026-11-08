@@ -56,7 +56,6 @@
       document.querySelectorAll('.card').forEach(card => card.hidden = button.dataset.filter !== 'all' && card.dataset.category !== button.dataset.filter);
     }));
     const box = document.querySelector('.lightbox'), large = box.querySelector('img');
-        const box = document.querySelector('.lightbox'), large = box.querySelector('img');
     const faceImages = Array.from(document.querySelectorAll('[data-face-gallery]'));
     const previous = box.querySelector('.lightbox-prev'), next = box.querySelector('.lightbox-next'), counter = box.querySelector('.light-counter');
     let currentFace = -1;
@@ -95,5 +94,6 @@
   </script>
 </body>
 </html>
+
 
 
