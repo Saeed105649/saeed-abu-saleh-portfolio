@@ -28,19 +28,18 @@
     <section class="wrap about" id="about"><div><h2>Hi, I’m Saeed.</h2><p>I’m interested in 3D modeling, character design, and props. This portfolio brings together my projects and creative process, and I’ll keep adding new work over time.</p></div><span class="about-symbol" aria-hidden="true">✳</span></section>
     <section class="wrap hero" id="home">
       <div><div class="eyebrow">PORTFOLIO · 2026</div><h1>3D <span>ART</span></h1><p class="intro">A collection of 3D models and projects, from shaping characters and refining topology to presenting the finished work.</p><div class="actions"><a class="button primary" href="#work">Explore my work <span aria-hidden="true">↓</span></a><a class="button" href="#about">About me</a></div></div>
-      <div class="hero-art"><span class="art-index">01 — 07</span><img src="work-8.jpg" alt="Close-up portrait of the 3D character" data-face-gallery-trigger="textured"></div>
+      <div class="hero-art"><span class="art-index">01 — 06</span><img src="work-8.jpg" alt="Close-up portrait of the 3D character" data-gallery-trigger="face"></div>
     </section>
     <section class="wrap" id="work">
-      <div class="section-head"><div><h2>Selected Work</h2><p>Models and studies from my 3D projects</p></div><span class="count">07 PROJECTS</span></div>
+      <div class="section-head"><div><h2>Selected Work</h2><p>Models and studies from my 3D projects</p></div><span class="count">06 PROJECTS</span></div>
       <div class="filters" role="group" aria-label="Filter projects"><button class="filter active" data-filter="all">All</button><button class="filter" data-filter="character">Character</button><button class="filter" data-filter="props">Clothing &amp; Props</button></div>
       <div class="grid">
         <article class="card" data-category="character"><div class="thumb"><img src="work-7.jpg" alt="Character with clothing and weapons in one scene" loading="lazy"><span class="tag">Final Scene</span></div><div class="card-info"><div class="card-title"><h3>Character &amp; Gear</h3><span class="card-num">01</span></div><p>A complete scene featuring the character, clothing, and weapons.</p></div></article>
-        <article class="card" data-category="character"><div class="thumb"><img src="work-8.jpg" alt="Three facial modeling studies" data-face-gallery-trigger="textured" loading="lazy"><span class="tag">Face Studies</span></div><div class="card-info"><div class="card-title"><h3>Face Studies</h3><span class="card-num">02</span></div><p>Three stages of the character face: topology, textured render, and sculpt.</p></div></article>
-        <article class="card" data-category="character"><div class="thumb"><img src="work-2.jpg" alt="Front view of the character body model" loading="lazy"><span class="tag">Character</span></div><div class="card-info"><div class="card-title"><h3>Character Model</h3><span class="card-num">03</span></div><p>Building the body shape and balancing its proportions.</p></div></article>
-        <article class="card" data-category="props"><div class="thumb"><img src="work-3.jpg" alt="Topology model of a shirt and skirt" loading="lazy"><span class="tag">Clothing</span></div><div class="card-info"><div class="card-title"><h3>Clothing Design</h3><span class="card-num">04</span></div><p>Shaping a shirt and skirt while highlighting the mesh.</p></div></article>
-        <article class="card" data-category="props"><div class="thumb"><img src="work-4.jpg" alt="Front view of trousers and boots model" loading="lazy"><span class="tag">Clothing</span></div><div class="card-info"><div class="card-title"><h3>Trousers &amp; Boots</h3><span class="card-num">05</span></div><p>Clothing details designed to fit the character.</p></div></article>
-        <article class="card" data-category="props"><div class="thumb"><img src="work-5.jpg" alt="Fantasy weapon model" loading="lazy"><span class="tag">Weapon</span></div><div class="card-info"><div class="card-title"><h3>Fantasy Weapon</h3><span class="card-num">06</span></div><p>A striking weapon model with sharp, organic details.</p></div></article>
-        <article class="card" data-category="props"><div class="thumb"><img src="work-6.jpg" alt="Side view of the weapon model" loading="lazy"><span class="tag">Side View</span></div><div class="card-info"><div class="card-title"><h3>Weapon Side View</h3><span class="card-num">07</span></div><p>A side view showing the model's structure and depth.</p></div></article>
+        <article class="card" data-category="character"><div class="thumb"><img src="work-8.jpg" alt="Three facial modeling studies" data-gallery-trigger="face" loading="lazy"><span class="tag">Face Studies</span></div><div class="card-info"><div class="card-title"><h3>Face Studies</h3><span class="card-num">02</span></div><p>Three stages of the character face: topology, textured render, and sculpt.</p></div></article>
+        <article class="card" data-category="character"><div class="thumb"><img src="character-body-color.jpg" alt="Textured character model" data-gallery-trigger="character" loading="lazy"><span class="tag">Character</span></div><div class="card-info"><div class="card-title"><h3>Character Model</h3><span class="card-num">03</span></div><p>Character form from base mesh and topology to the colored model.</p></div></article>
+        <article class="card" data-category="props"><div class="thumb"><img src="clothing-color.jpg" alt="Textured clothing design" data-gallery-trigger="clothing" loading="lazy"><span class="tag">Clothing</span></div><div class="card-info"><div class="card-title"><h3>Clothing Design</h3><span class="card-num">04</span></div><p>Garment studies showing the model, topology, and textured finish.</p></div></article>
+        <article class="card" data-category="props"><div class="thumb"><img src="trousers-color.jpg" alt="Textured trousers and boots model" data-gallery-trigger="trousers" loading="lazy"><span class="tag">Clothing</span></div><div class="card-info"><div class="card-title"><h3>Trousers &amp; Boots</h3><span class="card-num">05</span></div><p>Clothing studies from the base model to the textured boots and trousers.</p></div></article>
+        <article class="card" data-category="props"><div class="thumb"><img src="weapon-axe-color.jpg" alt="Colored fantasy weapon models" data-gallery-trigger="weapons" loading="lazy"><span class="tag">Weapons</span></div><div class="card-info"><div class="card-title"><h3>Weapon Designs</h3><span class="card-num">06</span></div><p>Fantasy weapon designs shown in color, sculpt, and topology views.</p></div></article>
       </div>
     </section>
   </main>
@@ -53,45 +52,69 @@
       button.classList.add('active');
       document.querySelectorAll('.card').forEach(card => card.hidden = button.dataset.filter !== 'all' && card.dataset.category !== button.dataset.filter);
     }));
+    const galleries = {
+      face: [
+        { src: 'work-8.jpg', alt: 'Textured close-up portrait of the character' },
+        { src: 'work-1.jpg', alt: 'Topology details of the character head' },
+        { src: 'work-9.jpg', alt: 'Grayscale sculpt of the character head' }
+      ],
+      character: [
+        { src: 'character-body-color.jpg', alt: 'Textured character model' },
+        { src: 'character-body-gray.jpg', alt: 'Gray character body model' },
+        { src: 'work-2.jpg', alt: 'Character body topology' }
+      ],
+      clothing: [
+        { src: 'clothing-color.jpg', alt: 'Textured clothing design' },
+        { src: 'clothing-gray.jpg', alt: 'Gray clothing model' },
+        { src: 'work-3.jpg', alt: 'Clothing topology model' }
+      ],
+      trousers: [
+        { src: 'trousers-color.jpg', alt: 'Textured trousers and boots' },
+        { src: 'trousers-gray.jpg', alt: 'Gray trousers and boots model' },
+        { src: 'work-4.jpg', alt: 'Trousers and boots topology' }
+      ],
+      weapons: [
+        { src: 'weapon-axe-color.jpg', alt: 'Colored fantasy axe' },
+        { src: 'weapon-axe-gray.jpg', alt: 'Gray fantasy axe model' },
+        { src: 'work-5.jpg', alt: 'Fantasy axe topology' },
+        { src: 'weapon-sword-color.jpg', alt: 'Colored fantasy sword' },
+        { src: 'weapon-sword-gray.jpg', alt: 'Gray fantasy sword model' },
+        { src: 'work-6.jpg', alt: 'Fantasy sword topology and side view' }
+      ]
+    };
     const box = document.querySelector('.lightbox'), large = box.querySelector('img');
-    const faceImages = [
-      { key: 'topology', src: 'work-1.jpg', alt: 'Topology details of the character head' },
-      { key: 'textured', src: 'work-8.jpg', alt: 'Textured close-up portrait of the character' },
-      { key: 'sculpt', src: 'work-9.jpg', alt: 'Grayscale sculpt of the character head' }
-    ];
     const previous = box.querySelector('.lightbox-prev'), next = box.querySelector('.lightbox-next'), counter = box.querySelector('.light-counter');
-    let currentFace = -1;
-    function showFace(index) {
-      currentFace = (index + faceImages.length) % faceImages.length;
-      const image = faceImages[currentFace];
+    let currentGalleryKey = null, currentGalleryIndex = 0;
+    function showGallery(key, index = 0) {
+      const gallery = galleries[key];
+      if (!gallery || !gallery.length) return;
+      currentGalleryKey = key;
+      currentGalleryIndex = (index + gallery.length) % gallery.length;
+      const image = gallery[currentGalleryIndex];
       large.src = image.src; large.alt = image.alt;
       box.querySelector('.light-caption').textContent = image.alt;
       previous.hidden = false; next.hidden = false; counter.hidden = false;
-      counter.textContent = String(currentFace + 1) + ' / ' + faceImages.length;
+      counter.textContent = String(currentGalleryIndex + 1) + ' / ' + gallery.length;
       box.classList.add('open');
     }
     function openImage(image) {
-      if (image.dataset.faceGalleryTrigger) {
-        showFace(faceImages.findIndex(face => face.key === image.dataset.faceGalleryTrigger));
-        return;
-      }
-      const faceIndex = faceImages.indexOf(image);
-      if (faceIndex >= 0) { showFace(faceIndex); return; }
-      currentFace = -1; large.src = image.src; large.alt = image.alt;
+      const galleryKey = image.dataset.galleryTrigger;
+      if (galleryKey) { showGallery(galleryKey); return; }
+      currentGalleryKey = null; large.src = image.src; large.alt = image.alt;
       box.querySelector('.light-caption').textContent = image.alt;
       previous.hidden = true; next.hidden = true; counter.hidden = true;
       box.classList.add('open');
     }
     document.querySelectorAll('.thumb img, .hero-art img').forEach(image => image.addEventListener('click', () => openImage(image)));
-    previous.addEventListener('click', () => showFace(currentFace - 1));
-    next.addEventListener('click', () => showFace(currentFace + 1));
-    const closeBox = () => { box.classList.remove('open'); currentFace = -1; };
+    previous.addEventListener('click', () => showGallery(currentGalleryKey, currentGalleryIndex - 1));
+    next.addEventListener('click', () => showGallery(currentGalleryKey, currentGalleryIndex + 1));
+    const closeBox = () => { box.classList.remove('open'); currentGalleryKey = null; };
     box.querySelector('.close').addEventListener('click', closeBox);
     box.addEventListener('click', event => { if (event.target === box) closeBox(); });
     document.addEventListener('keydown', event => {
       if (event.key === 'Escape') closeBox();
-      if (currentFace >= 0 && event.key === 'ArrowLeft') showFace(currentFace + 1);
-      if (currentFace >= 0 && event.key === 'ArrowRight') showFace(currentFace - 1);
+      if (currentGalleryKey && event.key === 'ArrowLeft') showGallery(currentGalleryKey, currentGalleryIndex + 1);
+      if (currentGalleryKey && event.key === 'ArrowRight') showGallery(currentGalleryKey, currentGalleryIndex - 1);
     });
   </script>
 </body>
